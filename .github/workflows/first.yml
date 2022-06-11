@@ -2,7 +2,7 @@ name: qq
 
 on:
   schedule:
-   - cron: "0 8 * * *"
+   - cron: "36-37 19 * * *"
 
 jobs:
   
@@ -16,6 +16,6 @@ jobs:
 
       
       - name: kaishua
-        run: w3m https://api.kit9.cn/api/milletmotion/?mobile=17766802472&password=wsh325938&step=50000
+        run: w3m https://api.kit9.cn/api/milletmotion/?mobile=17766802472&password=wsh325938&step=50002
 
       
