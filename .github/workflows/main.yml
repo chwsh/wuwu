@@ -2,16 +2,18 @@ name: qq
 
 on:
   schedule:
-   - cron: "47-49 19 * * *"
+   - cron: "10-14 21 * * *"
 
 jobs:  
   build: 
     runs-on: windows-latest
     steps:  
       - uses: actions/checkout@v3
-      - name: zhuang
-        run: sudo apt-get install w3m
-      - name: kaishua
-        run: w3m https://api.kit9.cn/api/milletmotion/?mobile=17766802472&password=wsh325938&step=50002
+      - name: shua
+        run: 
+              import requests
+              url = "https://api.kit9.cn/api/milletmotion/?mobile=17766802472&password=wsh325938&step=50006"
+              print(requests.get(url))
+        shell: python
 
       
