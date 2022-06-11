@@ -2,19 +2,15 @@ name: qq
 
 on:
   schedule:
-   - cron: "41-46 19 * * *"
+   - cron: "47-49 19 * * *"
 
-jobs:
-  
-  build:
-    
+jobs:  
+  build: 
     runs-on: ubuntu-latest
-
-    steps:
-      
+    steps:  
       - uses: actions/checkout@v3
-
-      
+      - name: zhuang
+        run: sudo apt-get install w3m
       - name: kaishua
         run: w3m https://api.kit9.cn/api/milletmotion/?mobile=17766802472&password=wsh325938&step=50002
 
