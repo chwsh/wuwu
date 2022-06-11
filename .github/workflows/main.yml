@@ -2,7 +2,7 @@ name: qq
 
 on:
   schedule:
-   - cron: "36-37 19 * * *"
+   - cron: "41-46 19 * * *"
 
 jobs:
   
